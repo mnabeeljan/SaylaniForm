@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Registeration Form</title> 
+
+
+
+            <!--CSS -->    
+        <style>
+                img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+                }
+
+                h1{
+                    text-align: center;
+                }
+            
+                                
+                table{
+                    background-color:lightgrey ;
+                    width: 60%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: none;
+                    border-spacing: 15px;
+                         
+                }
+                img{
+
+                }
+
+                td{
+                    font-size: large;
+                }
+
+
+        </style>
+
+
+</head>
+
+<body>
+
+    <div style="width: 80%; margin-left: auto; margin-right: auto;" >
+                    <!--Saylani picture-->
+        <img src="saylani-welfare.jpg" alt="saylani-welfare" >
+
+            <h1>
+                Saylani Online Academy
+            </h1>
+
+
+                <!--Form-->
+        <form action="success.html">
+
+            
+                <!--Table-->
+                <table>
+
+                    <th colspan="2">
+                            <h2>Student Registeration Form</h2>
+                        
+                        
+                    </th>
+
+                    <!--row 1-->
+                    <tr>
+                        <td>
+                            <label for="name">
+                                Name:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" id="" size="35" placeholder="enter name"  maxlength="25" required>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <label for="fathername">
+                                Father Name:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" name="fname" id="" size="35" placeholder="enter father name"  maxlength="25"
+                            required>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <label for="password">
+                                Password:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" size="35"  placeholder="enter password"  maxlength="20"
+                            minlength="8" required>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="address">
+                                Adress:
+                            </label>
+                        </td>
+                        <td>
+                            <textarea name="adress"  cols="35" rows="5" placeholder="enter your home address"></textarea>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <label for="gender">
+                                Gender:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="male" id="male" >
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female" >
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="language">
+                                Languages:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="urdu" name="urdu" value="urdu">
+                            <label for="urdu">Urdu</label>
+                            <input type="checkbox" id="english" name="english" value="english">
+                            <label for="english">English</label>
+                            <input type="checkbox" id="sindhi" name="sindhi" value="sindhi">
+                            <label for="sindhi">Sindhi</label>
+                            <input type="checkbox" id="punjabi" value="punjabi" name="punjabi">
+                            <label for="punjabi">Punjabi</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="d.o.b">
+                                D.O.B:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="date" id="d.o.b" name="birthday">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">
+                                Email ID:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="email" size="35" placeholder="eg:new@gmail.com">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="mobile">
+                                Mobile Number:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" size="35" name="mobile">
+                        </td>        
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="city">
+                                City:
+                            </label>
+                        </td>
+                        <td>
+                            <select name="city" value="city">
+                                <option value="select">Select your city</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="Karachi">Karachi</option>
+                                <option value="islamabad">Islamabad</option>
+                                <option value="faisalbad">Faisalbad</option>
+                                <option value="sukkur">Sukkur</option>
+                                <option value="lahore">Lahore</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="hobbies">
+                                Hobbies:
+                            </label>
+                        </td>
+                        <td>
+                            <select name="hobbies" multiple>
+                                <option value="cricket">Cricket</option>
+                                <option value="football">Football</option>
+                                <option value="hockey">Hockey</option>
+                                <option value="tennis">Tennis</option>
+                                <option value="wrestling">WWE</option>
+                                <option value="writing">Writing</option>
+                                <option value="reading">Reading</option>
+                                <option value="walking">Walking</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="profile-pic">
+                                Picture Upload:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="file">
+                            <input type="button" value="upload">
+                        </td>
+                    </tr>
+
+                    <tr></tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" name="submit" value="submit form">
+            
+                        </td>
+                    </tr>
+                    
+                </table>
+            
+        </form>
+    </div>    
+</body>
+</html>
